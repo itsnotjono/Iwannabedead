@@ -2006,9 +2006,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1295843678}
   - component: {fileID: 1295843677}
-  - component: {fileID: 1295843676}
   - component: {fileID: 1295843680}
   - component: {fileID: 1295843679}
+  - component: {fileID: 1295843681}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2016,18 +2016,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1295843676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1295843675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac88a7f32f648d84fa2e6f1650802c23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1295843677
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2102,8 +2090,8 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
+  m_UseAutoMass: 1
+  m_Mass: 348.32956
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -2111,7 +2099,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1295843680
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2138,6 +2126,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7, y: 1.81}
   m_EdgeRadius: 0
+--- !u!114 &1295843681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295843675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdf446b3361d1b1439af8ad39270dbc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minGroundNormalY: 0.65
+  gravityModifier: 1
+  maxSpeed: 85
+  jumpTakeOffSpeed: 40
 --- !u!1 &1675724782
 GameObject:
   m_ObjectHideFlags: 0
